@@ -71,4 +71,29 @@ with
 ```scala
 val nonce = sc.range(1, trials + 1)
 ```
+### Discussion on Efficiency
+
+#### Deterministic Approach (Sequential from 1 to n)
+
+**Pros:**
+- **Guaranteed Coverage:** Checks all possible nonces, ensuring a solution is found if it exists.
+
+**Cons:**
+- **Inefficient for Large Ranges:** Continues checking all numbers even if a solution is found early.
+- **Resource Intensive:** Requires significant computation for large `n`.
+
+#### Randomized Approach
+
+**Pros:**
+- **Potential for Early Success:** Can find a solution faster if the correct nonce is hit early.
+- **Efficient for Large Ranges:** Better suited for large spaces where exhaustive search is impractical.
+- **Parallelism:** Can leverage distributed systems to explore different parts simultaneously.
+
+**Cons:**
+- **No Guarantee:** May not find a solution within a given number of trials.
+
+#### Conclusion
+
+- **Small Nonce Ranges:** The deterministic approach is preferable as it systematically checks all possibilities.
+- **Large Nonce Ranges:** The randomized approach can be more efficient by potentially finding a solution without exhaustive checking.
 
