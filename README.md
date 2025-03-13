@@ -2,6 +2,8 @@
 
 ## 1. Running the Program Locally (4 points)
 
+Eagle IDs: 43228678, 20852155, 62343426
+
 We executed the program on a local machine for `k = 2, 3, 4, 5, 6`. The results are summarized below:
 
 | Difficulty (k) | Nonce        | XS                                | Hashed Value | Time Elapsed | Number of Trials |
