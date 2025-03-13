@@ -1,4 +1,4 @@
-# Project 1: Proof of Work Simulation (Junhao Yan, Bo Zhang, Ruohang Feng)
+# Project 1 (Junhao Yan, Bo Zhang, Ruohang Feng)
 
 ## 1. Running the Program Locally (4 points)
 
