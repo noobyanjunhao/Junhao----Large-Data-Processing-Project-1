@@ -40,7 +40,7 @@ $(1 \text{ master} + 2 \text{ workers}) \times 4 \text{ vCPUs} = 12 \text{ vCPUs
 We estimated the number of trials using the probability formula:
 
 
-$1 - e^{-pN}$
+$1 - e^{-pN}$ （approximate with geometric distribution）
 
 where:
 
